@@ -9,6 +9,9 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+
+    // Desktop Hot Reload
+    alias(libs.plugins.composeHotReload)
 }
 
 kotlin {
