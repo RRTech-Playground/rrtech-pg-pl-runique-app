@@ -2,6 +2,7 @@ rootProject.name = "rrtech-pg-pl-runique-app"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
+    includeBuild("build-logic")
 
     // Desktop Hot Reload
     plugins {
@@ -44,3 +45,23 @@ plugins {
 }
 
 include(":composeApp")
+include(":modules:app:shell")
+include(
+    ":modules:auth:data",
+    ":modules:auth:domain",
+    ":modules:auth:presentation"
+)
+include(
+    ":modules:core:data",
+    ":modules:core:database",
+    ":modules:core:domain",
+    ":modules:core:presentation:designsystem",
+    ":modules:core:presentation:ui"
+)
+include(
+    ":modules:run:data",
+    ":modules:run:domain",
+    ":modules:run:location",
+    ":modules:run:network",
+    ":modules:run:presentation"
+)
