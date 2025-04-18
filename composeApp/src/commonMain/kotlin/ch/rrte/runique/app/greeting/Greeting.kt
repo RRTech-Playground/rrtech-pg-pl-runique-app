@@ -1,4 +1,4 @@
-package ch.rrte.runique.app
+package ch.rrte.runique.app.greeting
 
 class Greeting {
     private val platform = getPlatform()

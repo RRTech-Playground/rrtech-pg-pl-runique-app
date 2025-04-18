@@ -1,4 +1,4 @@
-package ch.rrte.runique.app
+package ch.rrte.runique.app.greeting
 
 class WasmPlatform: Platform {
     override val name: String = "Web with Kotlin/Wasm"
