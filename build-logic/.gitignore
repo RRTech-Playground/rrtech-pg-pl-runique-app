@@ -1,0 +1,15 @@
+# RRTech Example
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### Gradle
+.gradle
+build/
+
+### Others
+.DS_Store

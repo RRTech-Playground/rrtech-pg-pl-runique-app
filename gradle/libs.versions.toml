@@ -133,6 +133,11 @@ mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 # Touchlab
 touchlab-kermit = { module = "co.touchlab:kermit", version.ref = "kermit"}
 
+# Gradle (for grade convention plugins used in build-logic)
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "android-tools" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
 
 [plugins]
 
@@ -146,6 +151,19 @@ kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", versio
 kotestMultiplatform = { id = "io.kotest.multiplatform", version.ref = "kotest" }
 room = { id = "androidx.room", version.ref = "androidx-room" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+convention-app-android-application = { id = "convention.app.android.application", version = "unspecified"}
+convention-app-android-application-compose = { id = "convention.app.android.application.compose", version = "unspecified"}
+convention-app-android-library = { id = "convention.app.android.library", version = "unspecified"}
+
+convention-app-kmp-application = { id = "convention.app.kmp.application", version = "unspecified"}
+convention-app-kmp-application-compose = { id = "convention.app.kmp.application.compose", version = "unspecified"}
+convention-app-kmp-library = { id = "convention.app.kmp.library", version = "unspecified"}
+convention-app-kmp-library-compose = { id = "convention.app.kmp.library.compose", version = "unspecified"}
+
+convention-app-kotestMultiplatform = { id = "convention.app.kotest.multiplatform", version = "unspecified"}
+convention-app-ktorMultiplatform = { id = "convention.app.ktor.multiplatform", version = "unspecified"}
+
 
 
 [bundles]
