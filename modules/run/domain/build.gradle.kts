@@ -6,3 +6,15 @@ plugins {
 android {
     namespace = "ch.rrte.runique.app.run.domain"
 }
+
+kotlin {
+    sourceSets {
+        commonMain.dependencies {
+
+//            // From example for Android only
+//            implementation(libs.kotlinx.coroutines.core)
+
+            implementation(projects.modules.core.domain)
+        }
+    }
+}

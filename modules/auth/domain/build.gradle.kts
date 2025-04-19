@@ -6,3 +6,11 @@ plugins {
 android {
     namespace = "ch.rrte.runique.app.auth.domain"
 }
+
+kotlin {
+    sourceSets {
+        commonMain.dependencies {
+            implementation(projects.modules.core.domain)
+        }
+    }
+}

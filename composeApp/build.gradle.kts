@@ -63,7 +63,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(project(":modules:examples:hellofuture"))
+            implementation(projects.modules.examples.hellofuture)
 
             implementation(compose.runtime)
             implementation(compose.foundation)
