@@ -10,7 +10,7 @@ android {
 kotlin {
     sourceSets {
         commonMain.dependencies {
-            implementation(project(":modules:core:domain"))
+            implementation(projects.modules.core.domain)
         }
     }
 }
