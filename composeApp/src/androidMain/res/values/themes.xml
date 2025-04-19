@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <style name="Theme.Runique" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <!-- Hm, but doesn't seem to work, the to bar still is gray, not black -->
+</resources>
