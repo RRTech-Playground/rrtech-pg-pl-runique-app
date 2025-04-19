@@ -45,7 +45,6 @@ plugins {
 }
 
 include(":composeApp")
-include(":modules:app:shell")
 include(
     ":modules:auth:data",
     ":modules:auth:domain",
