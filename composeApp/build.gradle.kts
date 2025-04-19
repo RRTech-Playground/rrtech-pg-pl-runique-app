@@ -65,6 +65,8 @@ kotlin {
         commonMain.dependencies {
             implementation(projects.modules.examples.hellofuture)
 
+            implementation(projects.modules.core.presentation.designsystem)
+
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
