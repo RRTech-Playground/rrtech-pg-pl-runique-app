@@ -58,6 +58,7 @@ include(
     ":modules:core:presentation:designsystem",
     ":modules:core:presentation:ui"
 )
+include(":modules:examples:hellofuture")
 include(
     ":modules:run:data",
     ":modules:run:domain",
