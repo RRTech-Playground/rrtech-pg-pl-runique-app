@@ -2,7 +2,7 @@ package ch.rrte.runique.app.core.domain.util
 
 sealed interface DataError: Error {
 
-    enum class Network: DataError {
+    enum class Remote: DataError {
         REQUEST_TIMEOUT,
         UNAUTHORIZED,
         CONFLICT,
