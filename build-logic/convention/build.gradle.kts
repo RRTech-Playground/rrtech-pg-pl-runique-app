@@ -8,6 +8,14 @@ dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.android.tools.common)
     compileOnly(libs.kotlin.gradlePlugin)
+
+    // BuildKonfig needs to be loaded with 'implementation()' not 'compileOnly()' to work!
+    // Otherwise we run into the error "Plugin with id 'com.codingfeline.buildkonfig' not found."
+    // And it needs Gradle 8.11 to be version-compatible with Kotlin 2.1.x.
+    implementation(libs.buildKonfigPlugin)
+    implementation(libs.buildKonfigPlugin.compiler)
+
+
 }
 
 gradlePlugin {
@@ -45,6 +53,10 @@ gradlePlugin {
         }
 
         // Tooling
+        register("buildKonfig") {
+            id = "convention.app.buildkonfig"
+            implementationClass = "BuildKonfigConventionPlugin"
+        }
         register("kotestMultiplatform") {
             id = "convention.app.kotest.multiplatform"
             implementationClass = "KotestMultiplatformConventionPlugin"

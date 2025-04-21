@@ -1,6 +1,6 @@
 [versions]
 
-agp = "8.7.3"
+agp = "8.7.2"
 android-tools = "31.9.1"
 androidx-activityCompose = "1.10.1"
 androidx-appcompat = "1.7.0"
@@ -13,6 +13,7 @@ androidx-room = "2.7.0"
 androidx-sqlite = "2.5.0"
 androidx-test-junit = "1.2.1"
 appDirs = "1.4.0"
+buildKonfig = "0.17.1"
 coil3 = "3.1.0"
 compose-hot-reload = "1.0.0-alpha05-88" # latest v1.0.0-alpha04, but since 1.0.0-alpha05-86 we don't need DevelopmentEntryPoint {} anymore
 compose-lifecycle = "2.8.4"
@@ -136,6 +137,8 @@ touchlab-kermit = { module = "co.touchlab:kermit", version.ref = "kermit"}
 # Gradle (for grade convention plugins used in build-logic)
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "android-tools" }
+buildKonfigPlugin = { group = "com.codingfeline.buildkonfig", name = "buildkonfig-gradle-plugin", version.ref = "buildKonfig" }
+buildKonfigPlugin-compiler = { group = "com.codingfeline.buildkonfig", name = "buildkonfig-compiler", version.ref = "buildKonfig" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 
@@ -143,6 +146,7 @@ kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-pl
 
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+buildKonfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildKonfig" }
 composeHotReload = { id = "org.jetbrains.compose.hot-reload", version.ref = "compose-hot-reload" }
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
@@ -156,6 +160,8 @@ convention-app-android-application = { id = "convention.app.android.application"
 convention-app-android-application-compose = { id = "convention.app.android.application.compose", version = "unspecified"}
 convention-app-android-library = { id = "convention.app.android.library", version = "unspecified"}
 
+convention-app-buildKonfig = { id = "convention.app.buildkonfig", version = "unspecified"}
+
 convention-app-kmp-application = { id = "convention.app.kmp.application", version = "unspecified"}
 convention-app-kmp-application-compose = { id = "convention.app.kmp.application.compose", version = "unspecified"}
 convention-app-kmp-library = { id = "convention.app.kmp.library", version = "unspecified"}
@@ -163,7 +169,6 @@ convention-app-kmp-library-compose = { id = "convention.app.kmp.library.compose"
 
 convention-app-kotestMultiplatform = { id = "convention.app.kotest.multiplatform", version = "unspecified"}
 convention-app-ktorMultiplatform = { id = "convention.app.ktor.multiplatform", version = "unspecified"}
-
 
 
 [bundles]

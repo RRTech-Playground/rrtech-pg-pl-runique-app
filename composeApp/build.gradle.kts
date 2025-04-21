@@ -10,6 +10,8 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
 
+    alias(libs.plugins.convention.app.buildKonfig)
+
     // Desktop Hot Reload
     alias(libs.plugins.composeHotReload)
 }
