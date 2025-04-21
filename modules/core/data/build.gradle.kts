@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.convention.app.android.library)
     alias(libs.plugins.convention.app.kmp.library)
+
+    alias(libs.plugins.convention.app.buildKonfig)
+    alias(libs.plugins.convention.app.ktorMultiplatform)
 }
 
 android {
