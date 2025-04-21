@@ -23,7 +23,7 @@ internal fun Project.configureKotlinCompose(
             implementation(target.libs.findLibrary("jetbrains.compose.components.uiToolingPreview").get())
             implementation(target.libs.findLibrary("jetbrains.compose.components-resources").get())
             implementation(target.libs.findLibrary("jetbrains.compose.foundation").get())
-            implementation(target.libs.findLibrary("jetbrains.compose.material").get())
+            //implementation(target.libs.findLibrary("jetbrains.compose.material").get())
             implementation(target.libs.findLibrary("jetbrains.compose.material3").get())
             implementation(target.libs.findLibrary("jetbrains.compose.runtime").get())
             implementation(target.libs.findLibrary("jetbrains.compose.ui").get())
