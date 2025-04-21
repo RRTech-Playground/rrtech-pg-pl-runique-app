@@ -15,6 +15,9 @@ dependencies {
     implementation(libs.buildKonfigPlugin)
     implementation(libs.buildKonfigPlugin.compiler)
 
+    // To have the Ktor convention plugin working, as with buildKonfig we now have to provide the serialization plugin here,
+    // Otherwise we get the error "Plugin with id 'org.jetbrains.kotlin.plugin.serialization' not found."
+    implementation(libs.kotlin.serializationPlugin)
 
 }
 

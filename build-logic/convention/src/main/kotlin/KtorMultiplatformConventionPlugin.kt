@@ -6,9 +6,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 class KtorMultiplatformConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
-            pluginManager.run {
-                apply("org.jetbrains.kotlin.plugin.serialization")
-            }
+            pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
 
             extensions.configure<KotlinMultiplatformExtension>("kotlin") {
                 sourceSets.commonMain.dependencies {
